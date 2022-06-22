@@ -1,7 +1,7 @@
 import logo from '../../assets/logo.png'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { style } from '@mui/system';
 import './NavBar.css'
+import CartWidget from '../CartWidget/CartWidget.js'
+import ItemListContainer from '../ItemListContainer/ItemListContainer.js'
 
 
 const Nav =()=>{
@@ -13,26 +13,15 @@ const Nav =()=>{
                     <li><a href="">Issues</a></li>
                     <li><a href="">TPBs</a></li>
                     <li><a href="">Omnibuses</a></li>
+                    
                 </ul>
             </nav>
-            <ShoppingCartIcon/>
+            <CartWidget/>
+            <ItemListContainer greeting="hola"/>
         </header>
             
         
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export default Nav

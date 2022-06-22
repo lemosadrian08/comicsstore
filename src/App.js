@@ -1,5 +1,5 @@
 import './App.css';
-import Nav from './Components/Nav/NavBar.js'  
+import Nav from './Components/NavBar/NavBar.js'  
 
 
 const App = () => {
