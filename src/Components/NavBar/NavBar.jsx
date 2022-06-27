@@ -1,13 +1,13 @@
 import logo from '../../assets/logo.png'
 import './NavBar.css'
-import CartWidget from '../CartWidget/CartWidget.js'
-import ItemListContainer from '../ItemListContainer/ItemListContainer.js'
+import CartWidget from '../CartWidget/CartWidget.jsx'
+
 
 
 const Nav =()=>{
     return(
         <header >
-            <a href=""><img  src={logo} class="logo" alt="" /></a>
+            <a href=""><img  src={logo} className="logo" alt="" /></a>
             <nav>
                 <ul >
                     <li><a href="">Issues</a></li>
@@ -17,7 +17,7 @@ const Nav =()=>{
                 </ul>
             </nav>
             <CartWidget/>
-            <ItemListContainer greeting="hola"/>
+          
         </header>
             
         

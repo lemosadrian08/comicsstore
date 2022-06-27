@@ -1,0 +1,29 @@
+.counterContainer{
+    display: flex;
+    width: 8rem;
+
+}
+
+.counterNumber{
+    margin: auto;
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+}
+
+.counterButton{
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0.2rem;
+}
+.addToCartButtom{
+    font-family: 'Bangers', cursive;
+    width: 8rem;
+    background-color: #004dff;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
