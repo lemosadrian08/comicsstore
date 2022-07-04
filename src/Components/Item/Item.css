@@ -1,0 +1,30 @@
+
+.itemContainer {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    align-items: center;
+    margin: 1rem auto;
+    background-color: #004dff;
+    border: black solid 0.3rem;
+}
+
+.itemTitle{
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem;
+
+    text-align: center;
+    color: white;
+    margin: 0.5rem;
+}
+
+.itemImage{
+    width: 17rem;
+    margin: 0.5rem;
+}
+
+.itemDescription{
+    font-family: 'Bangers', cursive;
+    color: white;
+    margin: 0.5rem;
+}
