@@ -26,17 +26,15 @@ const promise = new Promise((res,rej)=>{
 
 const ItemListContainer =({greeting})=>{
 
-const [ comics, setComics ] = useState([])
-const [ error, setError ] = useState(false)
-const [ loading, setLoading ] = useState(true)
+    const [ comics, setComics ] = useState([])
+    const [ error, setError ] = useState(false)
+    const [ loading, setLoading ] = useState(true)
 
     useEffect(()=>{
         promise.then((data)=>{
-            setComics(data)
-            console.log(comics)         
+            setComics(data)       
         }).catch(()=>{
             setError(true)
-            console.log('mal');
         }).finally(()=>{
             setLoading(false)
         })
@@ -46,10 +44,7 @@ const [ loading, setLoading ] = useState(true)
     const onAdd =(counter)=>{
         counter > 0 && alert(`agregaste ${counter}`);
     }
-    
-    const padreMirar =()=>{
-        console.log(comics)
-    }
+
     return(
         <>
         <p>{greeting}</p>       

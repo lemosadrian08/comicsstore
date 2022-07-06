@@ -1,0 +1,54 @@
+.itemDetailCountainer{
+    display: grid;
+    grid-template-areas: 
+    "img title title"
+    "img published published"
+    "img writer penciler"
+    "img description description";
+    margin: 2rem 5%;
+    background-image:url(https://wallpaperaccess.com/full/1219623.jpg) ;
+/*     background-color: #202020; */
+border: black solid 0.3rem;
+}
+
+.titleDetail{
+    font-family: 'Bangers', cursive;
+    grid-area: title;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+.imgDetail{
+    width: 26rem;
+    grid-area: img;
+    color: white;
+}
+.publishedDetail{
+    font-family: 'Bangers', cursive;
+    grid-area: published;
+    color: white;
+    margin: 0 0 0 2rem;
+    font-size: 1.3rem;
+}
+.writerDetail{
+    font-family: 'Bangers', cursive;
+    grid-area: writer;
+    color: white;
+    margin: 0 0 0 2rem;
+    font-size: 1.3rem;
+}
+.pencilerDetail{
+    font-family: 'Bangers', cursive;
+    grid-area: penciler;
+    color: white;
+    font-size: 1.3rem;
+}
+.descriptionDetail{
+    font-family: 'Bangers', cursive;
+    grid-area: description;
+    color: white;
+    margin: 0 2rem 0 2rem;
+    font-size: 1.3rem;
+}

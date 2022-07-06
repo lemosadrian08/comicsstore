@@ -1,5 +1,6 @@
 header {
-    background-color: #004dff;
+/*     background-color: #004dff; */
+background-image:url(https://wallpaperaccess.com/full/1219623.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
