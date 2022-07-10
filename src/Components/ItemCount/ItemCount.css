@@ -1,29 +1,34 @@
 .counterContainer{
     display: flex;
-    width: 8rem;
-
+    margin: auto;
+    width: 85%;    
+    grid-area: counter;
+    flex-direction: column;
 }
 
 .counterNumber{
     margin: auto;
-    font-family: 'Bangers', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
 }
 
-.counterButton{
-    font-family: 'Bangers', cursive;
+.counterButtonContainer{
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     background-color: white;
     border: none;
+    display: flex;
     cursor: pointer;
     padding: 0;
     margin: 0.2rem;
 }
 .addToCartButtom{
-    font-family: 'Bangers', cursive;
-    width: 8rem;
-    background-color: #004dff;
+    font-family: 'Roboto', sans-serif;
+    background-color: #3f7eff;
     font-size: 1.5rem;
     color: white;
+    border: none;
+    margin:  0.5rem 0;
+    box-shadow: 1px 4px 3px #d5d5d5;
     cursor: pointer;
 }

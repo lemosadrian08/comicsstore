@@ -1,16 +1,24 @@
 import './ItemDetail.css'
+import ItemCount from '../ItemCount/ItemCount.jsx';
 
 
-const ItemDetail =({id,title,description,writer,penciler,published,pictureURL})=>{
+
+const ItemDetail =({id,title,description,pictureURL,price})=>{
+    const onAdd =(counter)=>{
+        counter > 0 && alert(`agregaste ${counter}`);
+    }
     return(
-    <div className='itemDetailCountainer'>
-        <h2 className="titleDetail">{title}</h2>
-        <img className="imgDetail" src={pictureURL} alt={title} />
-        <p className="publishedDetail">Published: {published}</p>
-        <p className="writerDetail">Writer: {writer}</p>
-        <p className="pencilerDetail">Penciler: {penciler}</p>
-        <p className="descriptionDetail">{description}</p>
-    </div>
+        
+        <div className='itemDetailCountainer'>
+            <img className="imgDetail" src={pictureURL} alt={title} />
+        <div className='itemDetailInfoCountainer'>
+            <h2 className="titleDetail">{title}</h2>
+            <p className="descriptionDetail">{description}</p>
+            <p className="priceDetail">${price}</p>
+            <ItemCount stock={5} initial={0} onAdd={onAdd} />
+        </div>
+
+        </div>
     )
     
 }

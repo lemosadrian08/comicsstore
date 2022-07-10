@@ -1,10 +1,11 @@
 import Item from '../Item/Item.jsx'
 import './ItemList.css'
 
-const ItemList =({comics})=>{
+const ItemList =({products})=>{
+    console.log(products);
     return(
         <div className='ItemList'>
-            {comics.map((comic)=><Item key={comic.id} id={comic.id} title={comic.title} description={comic.description} pictureURL={comic.pictureURL} />  )}
+            {products.map((product)=><Item key={product.id} id={product.id} title={product.title} price={product.price} pictureURL={product.image} />  )}
         </div>
     )
 }

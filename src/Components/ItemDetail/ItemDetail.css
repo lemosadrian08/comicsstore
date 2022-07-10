@@ -1,54 +1,57 @@
 .itemDetailCountainer{
     display: grid;
     grid-template-areas: 
-    "img title title"
-    "img published published"
-    "img writer penciler"
-    "img description description";
+    "img title"
+    "img description"
+    "img price"
+    "img counter";
+
     margin: 2rem 5%;
-    background-image:url(https://wallpaperaccess.com/full/1219623.jpg) ;
-/*     background-color: #202020; */
-border: black solid 0.3rem;
+}
+.itemDetailInfoCountainer{
+    background-color: rgb(242, 242, 242);
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2%;
+    box-shadow: 1px 4px 3px #d5d5d5;
 }
 
 .titleDetail{
-    font-family: 'Bangers', cursive;
+    font-family: 'Roboto', sans-serif;
     grid-area: title;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
+    width: 85%;
+    margin: 5% auto;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .imgDetail{
-    width: 26rem;
+    width: 85%;
+    height: 35rem;
+    object-fit: contain;
     grid-area: img;
-    color: white;
+    color: black;
 }
-.publishedDetail{
-    font-family: 'Bangers', cursive;
-    grid-area: published;
-    color: white;
-    margin: 0 0 0 2rem;
-    font-size: 1.3rem;
-}
-.writerDetail{
-    font-family: 'Bangers', cursive;
-    grid-area: writer;
-    color: white;
-    margin: 0 0 0 2rem;
-    font-size: 1.3rem;
-}
-.pencilerDetail{
-    font-family: 'Bangers', cursive;
-    grid-area: penciler;
-    color: white;
-    font-size: 1.3rem;
-}
-.descriptionDetail{
-    font-family: 'Bangers', cursive;
+.priceDetail{
+    font-family: 'Roboto', sans-serif;
     grid-area: description;
-    color: white;
-    margin: 0 2rem 0 2rem;
-    font-size: 1.3rem;
+    color: black;
+    margin: 0 auto 5%;
+    font-size: 1.2rem;
+    width: 85%;
+    margin:auto;
+}
+
+.descriptionDetail{
+    font-family: 'Roboto', sans-serif;
+    grid-area: description;
+    color: black;
+    margin: 0 auto 5%;
+    font-size: 1.2rem;
+    width: 85%;
+
+    margin:auto;
 }
